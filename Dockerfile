@@ -3,8 +3,8 @@ FROM openjdk:11.0.5-jdk
 RUN mkdir -p /opt/app
 ENV PROJECT_HOME /opt/app
 
-COPY target/*.jar $PROJECT_HOME/app.jar
+COPY target/spring-petclinic-2.2.0.BUILD-SNAPSHOT.jar $PROJECT_HOME/spring-petclinic-2.2.0.BUILD-SNAPSHOT.jar
 
 WORKDIR $PROJECT_HOME
 
-CMD ["java",".jar","./Calculator-1.0-SNAPSHOT.jar"]
+CMD ["java",".jar","./spring-petclinic-2.2.0.BUILD-SNAPSHOT.jar"]
