@@ -10,7 +10,7 @@ pipeline {
                     sh 'mvn clean package'
             }
         }
-         
+        
         stage('Build docker image') {
            steps {
                script {         
