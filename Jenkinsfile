@@ -19,6 +19,7 @@ pipeline {
                  customImage.push("${env.BUILD_NUMBER}")
                  }                     
            }
+		   sh "docker rmi customImage"
         }
 	  }
     }
