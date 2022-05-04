@@ -20,7 +20,7 @@ pipeline {
                  }                     
            }
 		  
-		   sh "registry.hub.docker.com/danalao/petclinic:${env.BUILD_NUMBER}"
+		  
         }
 	  }
     }
