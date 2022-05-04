@@ -19,8 +19,8 @@ pipeline {
                  customImage.push("${env.BUILD_NUMBER}")
                  }                     
            }
-		   sh "danalao/petclinic:${env.BUILD_NUMBER}"
-		   sh "docker rmi registry.hub.docker.com/danalao/petclinic:${env.BUILD_NUMBER}"
+		  
+		   sh "danalao/petclinic registry.hub.docker.com/danalao/petclinic:${env.BUILD_NUMBER}"
         }
 	  }
     }
